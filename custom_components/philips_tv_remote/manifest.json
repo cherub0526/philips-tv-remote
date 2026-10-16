@@ -1,0 +1,12 @@
+{
+  "domain": "philips_tv_remote",
+  "name": "Philips TV Remote",
+  "codeowners": ["@cherub0526"],
+  "config_flow": true,
+  "documentation": "https://github.com/cherub0526/philips-tv-remote",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/cherub0526/philips-tv-remote/issues",
+  "requirements": ["ha-philipsjs==3.3.0", "wakeonlan==3.1.0"],
+  "version": "1.1.0"
+}

@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "連接你的 Philips 電視",
+        "description": "輸入電視的 IP 位址。選填的 MAC 位址可讓 Home Assistant 透過 Wake-on-LAN 喚醒電視。",
+        "data": {
+          "host": "主機",
+          "mac": "MAC 位址"
+        }
+      },
+      "pair": {
+        "title": "輸入配對 PIN 碼",
+        "description": "電視螢幕上正顯示一組 PIN 碼。在此輸入以完成配對。",
+        "data": {
+          "pin": "PIN 碼"
+        }
+      },
+      "reauth_confirm": {
+        "title": "重新與 Philips 電視配對",
+        "description": "電視螢幕上正顯示一組新的 PIN 碼。在此輸入以恢復存取。",
+        "data": {
+          "pin": "PIN 碼"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "連線失敗。請確認電視已開機並可在指定位址連線。",
+      "invalid_pin": "PIN 碼未被接受。請查看電視螢幕後再試一次。",
+      "unknown": "發生未預期的錯誤。"
+    },
+    "abort": {
+      "already_configured": "這台電視已設定過。",
+      "reauth_successful": "重新配對成功。"
+    }
+  }
+}

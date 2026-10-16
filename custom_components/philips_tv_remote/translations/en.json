@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to your Philips TV",
+        "description": "Enter the TV's IP address. The optional MAC address lets Home Assistant wake the TV with Wake-on-LAN.",
+        "data": {
+          "host": "Host",
+          "mac": "MAC address"
+        }
+      },
+      "pair": {
+        "title": "Enter the pairing PIN",
+        "description": "A PIN is showing on the TV screen. Type it here to finish pairing.",
+        "data": {
+          "pin": "PIN"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-pair with your Philips TV",
+        "description": "A new PIN is showing on the TV screen. Type it here to restore access.",
+        "data": {
+          "pin": "PIN"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect. Check that the TV is on and reachable at the given address.",
+      "invalid_pin": "That PIN was not accepted. Check the TV screen and try again.",
+      "unknown": "An unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This TV is already configured.",
+      "reauth_successful": "Re-pairing was successful."
+    }
+  }
+}
